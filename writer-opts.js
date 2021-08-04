@@ -47,6 +47,10 @@ function getWriterOpts () {
         commit.type = 'Build System'
       } else if (commit.type === 'ci') {
         commit.type = 'Continuous Integration'
+      } else if (commit.type === 'chore') {
+        commit.type = 'Chore'
+      } else if (commit.type === 'copy') {
+        commit.type = 'Copy'
       }
 
       if (commit.scope === '*') {
